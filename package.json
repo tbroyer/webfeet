@@ -24,7 +24,7 @@
     "eslint-plugin-package-json": "^0.33.2",
     "globals": "^16.2.0",
     "prettier": "^3.5.3",
-    "tstyche": "^4.0.0-rc.1",
+    "tstyche": "^4.0.0",
     "typescript": "^5.8.3"
   }
 }
