@@ -14,6 +14,7 @@ export default defineConfig([
     rules: {
       "package-json/require-description": "off",
       "package-json/require-version": "off",
+      "package-json/valid-scripts": "off",
     },
   },
   {
