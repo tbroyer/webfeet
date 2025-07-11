@@ -23,7 +23,7 @@
     "@webfeet/event-handler": "^0.1.0"
   },
   "devDependencies": {
-    "lit": "^3.3.0"
+    "lit": "^3.3.1"
   },
   "peerDependencies": {
     "@lit/reactive-element": "^2.0.0"

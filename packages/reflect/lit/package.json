@@ -23,8 +23,8 @@
     "@webfeet/reflect": "^0.1.0"
   },
   "devDependencies": {
-    "chai": "^5.2.0",
-    "lit": "^3.3.0"
+    "chai": "^5.2.1",
+    "lit": "^3.3.1"
   },
   "peerDependencies": {
     "@lit/reactive-element": "^2.0.0"
