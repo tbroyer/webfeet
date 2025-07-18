@@ -21,10 +21,10 @@
     "@web/dev-server-rollup": "^0.6.4",
     "@web/test-runner": "^0.20.2",
     "eslint": "^9.31.0",
-    "eslint-plugin-package-json": "^0.44.1",
+    "eslint-plugin-package-json": "^0.45.1",
     "globals": "^16.3.0",
     "prettier": "^3.6.2",
-    "tstyche": "^4.1.0",
+    "tstyche": "^4.3.0",
     "typescript": "^5.8.3"
   }
 }
