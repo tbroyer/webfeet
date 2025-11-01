@@ -12,7 +12,7 @@ to be used for testing custom elements implemented in various ways
    following the requirements below
 3. Import the `runTests` function from this package and call it
 4. Run the tests (likely using Web Test Runner) by the `test` NPM script,
-   so it's possible to run all tests with `npm -ws run test` at the root.
+   so it's possible to run all tests with `npm test --workspaces` at the root.
 
 ## Custom element requirements
 
