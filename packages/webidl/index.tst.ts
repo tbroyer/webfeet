@@ -166,7 +166,7 @@ expect(function functionSubtypes(
   nullableSimple = coerceToCallbackFunction(nullableSimple);
   nullableOverloads = coerceToCallbackFunction(nullableOverloads);
   nullableGeneric = coerceToCallbackFunction(nullableGeneric);
-});
+}).type.not.toRaiseError();
 
 expect(function interfaceTypes(iface: HTMLElement) {
   iface = coerceToInterface(HTMLElement, iface);
