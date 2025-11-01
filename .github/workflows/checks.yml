@@ -37,4 +37,4 @@ jobs:
         run: npm ci
 
       - name: Test
-        run: npm -ws run test
+        run: npm test --workspaces
