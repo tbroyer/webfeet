@@ -23,6 +23,7 @@
     "@webfeet/reflect": "^0.1.0"
   },
   "devDependencies": {
+    "@lit/reactive-element": "^2.1.1",
     "chai": "^6.2.1",
     "lit": "^3.3.1"
   },
