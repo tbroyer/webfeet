@@ -15,7 +15,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.28.5",
     "@babel/plugin-proposal-decorators": "^7.28.0",
-    "@changesets/cli": "^2.29.7",
+    "@changesets/cli": "^2.29.8",
     "@eslint/js": "^9.39.1",
     "@rollup/plugin-babel": "^6.1.0",
     "@web/dev-server-rollup": "^0.6.4",
@@ -23,7 +23,7 @@
     "eslint": "^9.39.1",
     "eslint-plugin-package-json": "^0.85.0",
     "globals": "^16.5.0",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.2",
     "tstyche": "^5.0.1",
     "typescript": "^5.9.3"
   }
