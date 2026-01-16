@@ -13,8 +13,8 @@
     "lint": "prettier -l . && eslint . && tsc"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.28.5",
-    "@babel/plugin-proposal-decorators": "^7.28.0",
+    "@babel/eslint-parser": "^7.28.6",
+    "@babel/plugin-proposal-decorators": "^7.28.6",
     "@changesets/cli": "^2.29.8",
     "@eslint/js": "^9.39.2",
     "@rollup/plugin-babel": "^6.1.0",
@@ -23,8 +23,8 @@
     "eslint": "^9.39.2",
     "eslint-plugin-package-json": "^0.88.1",
     "globals": "^17.0.0",
-    "prettier": "^3.7.4",
-    "tstyche": "^6.0.1",
+    "prettier": "^3.8.0",
+    "tstyche": "^6.0.2",
     "typescript": "^5.9.3"
   }
 }
