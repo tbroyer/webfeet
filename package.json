@@ -22,8 +22,8 @@
     "@web/test-runner": "^0.20.2",
     "eslint": "^9.39.2",
     "eslint-plugin-package-json": "^0.88.1",
-    "globals": "^17.0.0",
-    "prettier": "^3.8.0",
+    "globals": "^17.1.0",
+    "prettier": "^3.8.1",
     "tstyche": "^6.0.2",
     "typescript": "^5.9.3"
   }
