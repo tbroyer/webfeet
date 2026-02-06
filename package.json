@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.28.6",
-    "@babel/plugin-proposal-decorators": "^7.28.6",
+    "@babel/plugin-proposal-decorators": "^7.29.0",
     "@changesets/cli": "^2.29.8",
     "@eslint/js": "^9.39.2",
     "@rollup/plugin-babel": "^6.1.0",
@@ -22,9 +22,9 @@
     "@web/test-runner": "^0.20.2",
     "eslint": "^9.39.2",
     "eslint-plugin-package-json": "^0.88.2",
-    "globals": "^17.2.0",
+    "globals": "^17.3.0",
     "prettier": "^3.8.1",
-    "tstyche": "^6.1.0",
+    "tstyche": "^6.2.0",
     "typescript": "^5.9.3"
   }
 }
