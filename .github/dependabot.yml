@@ -10,6 +10,10 @@ updates:
         update-types:
           - "minor"
           - "patch"
+      eslint:
+        patterns:
+          - "eslint"
+          - "@eslint/*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
