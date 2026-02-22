@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "true"
   },
   "dependencies": {
     "chai": "^6.2.2"

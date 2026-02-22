@@ -11,9 +11,6 @@ export default defineConfig([
       "package-json": packageJson,
     },
     extends: ["package-json/recommended"],
-    rules: {
-      "package-json/valid-scripts": "off",
-    },
     settings: {
       packageJson: {
         enforceForPrivate: false,

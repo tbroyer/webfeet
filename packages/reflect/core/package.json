@@ -18,7 +18,7 @@
     "index.{js,d.ts}"
   ],
   "scripts": {
-    "test": ""
+    "test": "true"
   },
   "dependencies": {
     "@webfeet/microsyntaxes": "^0.1.0",

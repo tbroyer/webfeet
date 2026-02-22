@@ -18,7 +18,7 @@
     "index.{js,d.ts}"
   ],
   "scripts": {
-    "test": ""
+    "test": "true"
   },
   "publishConfig": {
     "access": "public"
