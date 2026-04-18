@@ -1,5 +1,7 @@
 import { assert } from "chai";
 
+const supportsScopedCustomElementRegistry = customElements === document.customElementRegistry;
+
 export class TestReferenceTargetElement extends HTMLElement {}
 customElements.define("test-reference-target", TestReferenceTargetElement);
 
@@ -355,17 +357,19 @@ export function reflectElementReference(elementName, typed = false) {
       assert_equals(fromDiv.getAttribute("test"), "", "Content attribute remains empty, as it is only updated at set time.");
     });
   });
-  if (!typed || customElements === document.customElementRegistry) {
+  if (!typed || supportsScopedCustomElementRegistry) {
     suite("Cross-document references and moves", () => {
       const [, { originalDocumentDiv } ] = setupTestContent(html`
   <${elementName} id='originalDocumentDiv'></${elementName}>
       `);
       test("Cross-document references and moves", () => {
         const newDoc = document.implementation.createHTMLDocument('new document');
-        if (customElements === document.customElementRegistry) {
-          customElements.initialize(newDoc);
+        let newCustomElements;
+        if (typed && supportsScopedCustomElementRegistry) {
+          newCustomElements = new CustomElementRegistry();
+          newCustomElements.define(targetReferenceElementName, customElements.get(targetReferenceElementName));
         }
-        const newDocSpan = newDoc.createElement(targetReferenceElementName);
+        const newDocSpan = newDoc.createElement(targetReferenceElementName, {customElementRegistry: newCustomElements});
         newDoc.body.appendChild(newDocSpan);
 
         // Create a reference across documents.
@@ -383,12 +387,16 @@ export function reflectElementReference(elementName, typed = false) {
       });
     });
   }
-  if (customElements === document.customElementRegistry) {
+  if (supportsScopedCustomElementRegistry) {
     test("Adopting element keeps references", () => {
       const otherDoc = document.implementation.createHTMLDocument('otherDoc');
-      customElements.initialize(otherDoc);
-      const otherDocDiv = otherDoc.createElement(elementName);
-      const otherDocSpan = otherDoc.createElement(targetReferenceElementName);
+      const otherCustomElements = new CustomElementRegistry();
+      otherCustomElements.define(elementName, customElements.get(elementName));
+      if (typed) {
+        otherCustomElements.define(targetReferenceElementName, customElements.get(targetReferenceElementName));
+      }
+      const otherDocDiv = otherDoc.createElement(elementName, { customElementRegistry: otherCustomElements});
+      const otherDocSpan = otherDoc.createElement(targetReferenceElementName, { customElementRegistry: otherCustomElements});
       otherDocDiv.appendChild(otherDocSpan);
       otherDoc.body.appendChild(otherDocDiv);
 
