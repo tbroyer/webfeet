@@ -25,7 +25,7 @@
     "globals": "^17.5.0",
     "prettier": "^3.8.3",
     "tstyche": "^6.2.0",
-    "typescript": "^5.9.3"
+    "typescript": "^6.0.3"
   },
   "overrides": {
     "@changesets/cli": {
