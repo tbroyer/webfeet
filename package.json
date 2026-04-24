@@ -24,7 +24,7 @@
     "eslint-plugin-package-json": "^0.91.1",
     "globals": "^17.5.0",
     "prettier": "^3.8.3",
-    "tstyche": "^7.0.0",
+    "tstyche": "^7.1.0",
     "typescript": "^6.0.3"
   },
   "overrides": {
