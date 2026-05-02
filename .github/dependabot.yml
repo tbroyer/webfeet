@@ -10,6 +10,9 @@ updates:
         update-types:
           - "minor"
           - "patch"
+      babel:
+        patterns:
+          - "@babel/*"
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
