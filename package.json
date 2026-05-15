@@ -13,7 +13,7 @@
     "lint": "prettier -l . && eslint . && tsc"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^8.0.0-rc.4",
+    "@babel/eslint-parser": "^8.0.0-rc.5",
     "@babel/plugin-proposal-decorators": "^8.0.0-rc.4",
     "@changesets/cli": "^2.31.0",
     "@eslint/js": "^10.0.1",
