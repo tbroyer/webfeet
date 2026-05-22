@@ -21,7 +21,7 @@
     "@web/dev-server-rollup": "^0.6.4",
     "@web/test-runner": "^0.20.2",
     "eslint": "^10.4.0",
-    "eslint-plugin-package-json": "^0.91.2",
+    "eslint-plugin-package-json": "^1.1.0",
     "globals": "^17.6.0",
     "prettier": "^3.8.3",
     "tstyche": "^7.1.0",
