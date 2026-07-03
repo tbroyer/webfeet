@@ -33,8 +33,7 @@ test("not a ReactiveElement", () => {
   class NotAReactiveElement extends HTMLElement {
     @(expect(eventHandler()).type.not.toBeApplicable)
     accessor onfoo:
-      | ((this: NotAReactiveElement, event: FooEvent) => any)
-      | null = null;
+      ((this: NotAReactiveElement, event: FooEvent) => any) | null = null;
   }
 });
 test("event type not registered on HTMLElementEventMap", () => {
