@@ -74,9 +74,9 @@ export type EventHandler<
  */
 export declare class EventHandlerHelper<
   Target extends EventTarget,
-  EventType extends Target extends HTMLElement
+  EventType extends (Target extends HTMLElement
     ? keyof HTMLElementEventMap
-    : string,
+    : string),
   TEvent extends Event = EventType extends keyof HTMLElementEventMap
     ? HTMLElementEventMap[EventType]
     : Event,
