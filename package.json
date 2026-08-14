@@ -21,9 +21,9 @@
     "@typescript/native": "npm:typescript@^7.0.2",
     "@web/dev-server-rollup": "^1.0.0",
     "@web/test-runner": "^1.0.0",
-    "eslint": "^10.8.0",
-    "eslint-plugin-package-json": "^1.6.2",
-    "globals": "^17.9.0",
+    "eslint": "^10.8.1",
+    "eslint-plugin-package-json": "^1.7.1",
+    "globals": "^17.10.0",
     "prettier": "^3.9.6",
     "tstyche": "^7.2.2",
     "typescript": "npm:@typescript/typescript6@^6.0.2"
