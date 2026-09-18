@@ -22,10 +22,10 @@
     "@web/dev-server-rollup": "^1.0.0",
     "@web/test-runner": "^1.0.0",
     "eslint": "^10.9.1",
-    "eslint-plugin-package-json": "^1.8.0",
+    "eslint-plugin-package-json": "^1.8.1",
     "globals": "^17.12.0",
     "prettier": "^3.9.6",
-    "tstyche": "^7.2.3",
+    "tstyche": "^7.2.5",
     "typescript": "npm:@typescript/typescript6@^6.0.2"
   },
   "overrides": {
